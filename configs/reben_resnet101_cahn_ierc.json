@@ -1,0 +1,43 @@
+{
+  "experiment_name": "reben_resnet101_cahn_ierc_s1s2",
+  "dataset": {
+    "name": "BigEarthNet v2.0 (reBEN)",
+    "split_method": "Geographic (inner square / inner frame / outer frame)",
+    "modalities": ["Sentinel-1 (VV, VH)", "Sentinel-2 (10 bands at 10m)"],
+    "num_classes": 19,
+    "image_size": 120
+  },
+  "model": {
+    "architecture": "CAHN-IERC Dual-Encoder",
+    "sar_backbone": "ResNet-101 (2-channel input)",
+    "opt_backbone": "ResNet-101 (10-channel input)",
+    "projection_dim": 256,
+    "fusion_type": "concat",
+    "pretrained": true
+  },
+  "training": {
+    "batch_size": 32,
+    "learning_rate": 0.0001,
+    "optimizer": "AdamW",
+    "weight_decay": 0.01,
+    "scheduler": "LinearWarmupCosineAnnealingLR",
+    "warmup_steps": 1000,
+    "loss": {
+      "cahn_weight": 1.0,
+      "cahn_temperature": 0.07,
+      "infonce_weight": 0.5,
+      "infonce_temperature": 0.07,
+      "cls_weight": 1.0
+    },
+    "ierc": {
+      "enabled": true,
+      "n_clusters": 16,
+      "recluster_interval_epochs": 3
+    }
+  },
+  "target_metrics": {
+    "ap_macro_target": ">= 72.0%",
+    "ap_macro_stretch": ">= 73.5%",
+    "published_resnet101_baseline": "70.93%"
+  }
+}

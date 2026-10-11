@@ -1,0 +1,42 @@
+{
+  "n_train": 137,
+  "n_test": 35,
+  "classification": {
+    "Linear SVM (C=1.0)": {
+      "accuracy": 74.28571428571429,
+      "macro_f1": 62.54689754689754,
+      "macro_precision": 62.5974025974026,
+      "macro_recall": 64.46969696969697
+    },
+    "RBF SVM (C=1.0)": {
+      "accuracy": 74.28571428571429,
+      "macro_f1": 62.54689754689754,
+      "macro_precision": 62.5974025974026,
+      "macro_recall": 64.46969696969697
+    },
+    "Random Forest (100 Trees)": {
+      "accuracy": 71.42857142857143,
+      "macro_f1": 59.64646464646465,
+      "macro_precision": 59.48717948717949,
+      "macro_recall": 60.151515151515156
+    },
+    "Gradient Boosting": {
+      "accuracy": 68.57142857142857,
+      "macro_f1": 55.317669448104226,
+      "macro_precision": 55.55555555555556,
+      "macro_recall": 56.26262626262627
+    },
+    "MLP Probe (64->32)": {
+      "accuracy": 71.42857142857143,
+      "macro_f1": 58.013468013468014,
+      "macro_precision": 57.92929292929293,
+      "macro_recall": 59.040404040404034
+    }
+  },
+  "retrieval": {
+    "top1": 68.57142857142857,
+    "top3": 80.0,
+    "top5": 88.57142857142857,
+    "mrr": 0.7592997198879551
+  }
+}

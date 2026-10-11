@@ -1,0 +1,135 @@
+{
+  "per_seed_runs": [
+    {
+      "probe_acc__Linear SVM (C=1.0)": 71.42857142857143,
+      "probe_acc__RBF SVM (C=1.0)": 77.14285714285715,
+      "probe_acc__Random Forest (100 Trees)": 74.28571428571429,
+      "probe_acc__Gradient Boosting": 80.0,
+      "probe_acc__MLP Probe (64->32)": 77.14285714285715,
+      "retrieval__top1": 60.0,
+      "retrieval__top3": 80.0,
+      "retrieval__top5": 88.57142857142857,
+      "retrieval__mrr": 0.7177788084930942,
+      "n_test": 35,
+      "seed": "runs\\"
+    },
+    {
+      "probe_acc__Linear SVM (C=1.0)": 65.71428571428571,
+      "probe_acc__RBF SVM (C=1.0)": 62.857142857142854,
+      "probe_acc__Random Forest (100 Trees)": 60.0,
+      "probe_acc__Gradient Boosting": 62.857142857142854,
+      "probe_acc__MLP Probe (64->32)": 60.0,
+      "retrieval__top1": 57.14285714285714,
+      "retrieval__top3": 80.0,
+      "retrieval__top5": 85.71428571428571,
+      "retrieval__mrr": 0.6824640967498109,
+      "n_test": 35,
+      "seed": "runs\\"
+    },
+    {
+      "probe_acc__Linear SVM (C=1.0)": 74.28571428571429,
+      "probe_acc__RBF SVM (C=1.0)": 74.28571428571429,
+      "probe_acc__Random Forest (100 Trees)": 71.42857142857143,
+      "probe_acc__Gradient Boosting": 68.57142857142857,
+      "probe_acc__MLP Probe (64->32)": 71.42857142857143,
+      "retrieval__top1": 68.57142857142857,
+      "retrieval__top3": 80.0,
+      "retrieval__top5": 88.57142857142857,
+      "retrieval__mrr": 0.7592997198879551,
+      "n_test": 35,
+      "seed": "runs\\"
+    }
+  ],
+  "aggregated": {
+    "n_test": {
+      "mean": 35.0,
+      "std": 0.0,
+      "values": [
+        35,
+        35,
+        35
+      ]
+    },
+    "probe_acc__Gradient Boosting": {
+      "mean": 70.47619047619048,
+      "std": 7.126966450997985,
+      "values": [
+        80.0,
+        62.857142857142854,
+        68.57142857142857
+      ]
+    },
+    "probe_acc__Linear SVM (C=1.0)": {
+      "mean": 70.47619047619048,
+      "std": 3.5634832254989965,
+      "values": [
+        71.42857142857143,
+        65.71428571428571,
+        74.28571428571429
+      ]
+    },
+    "probe_acc__MLP Probe (64->32)": {
+      "mean": 69.52380952380953,
+      "std": 7.126966450997987,
+      "values": [
+        77.14285714285715,
+        60.0,
+        71.42857142857143
+      ]
+    },
+    "probe_acc__RBF SVM (C=1.0)": {
+      "mean": 71.42857142857143,
+      "std": 6.172133998483682,
+      "values": [
+        77.14285714285715,
+        62.857142857142854,
+        74.28571428571429
+      ]
+    },
+    "probe_acc__Random Forest (100 Trees)": {
+      "mean": 68.57142857142857,
+      "std": 6.1721339984836785,
+      "values": [
+        74.28571428571429,
+        60.0,
+        71.42857142857143
+      ]
+    },
+    "retrieval__mrr": {
+      "mean": 0.7198475417102866,
+      "std": 0.031402101719467404,
+      "values": [
+        0.7177788084930942,
+        0.6824640967498109,
+        0.7592997198879551
+      ]
+    },
+    "retrieval__top1": {
+      "mean": 61.904761904761905,
+      "std": 4.856209060564558,
+      "values": [
+        60.0,
+        57.14285714285714,
+        68.57142857142857
+      ]
+    },
+    "retrieval__top3": {
+      "mean": 80.0,
+      "std": 0.0,
+      "values": [
+        80.0,
+        80.0,
+        80.0
+      ]
+    },
+    "retrieval__top5": {
+      "mean": 87.6190476190476,
+      "std": 1.3468700594029495,
+      "values": [
+        88.57142857142857,
+        85.71428571428571,
+        88.57142857142857
+      ]
+    }
+  }
+}

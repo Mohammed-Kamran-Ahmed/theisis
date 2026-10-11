@@ -1,0 +1,20 @@
+{
+  "experiment_name": "reben_ablation_no_cahn",
+  "dataset": {
+    "name": "BigEarthNet v2.0 (reBEN)",
+    "split_method": "Geographic",
+    "modalities": ["Sentinel-1", "Sentinel-2"],
+    "num_classes": 19
+  },
+  "model": {
+    "architecture": "Dual-Encoder (Plain SupCon, No CAHN)",
+    "sar_backbone": "ResNet-50",
+    "opt_backbone": "ResNet-50"
+  },
+  "training": {
+    "batch_size": 32,
+    "learning_rate": 0.0001,
+    "use_cahn": false,
+    "use_ierc": true
+  }
+}
